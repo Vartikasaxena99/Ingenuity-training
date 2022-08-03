@@ -1,0 +1,78 @@
+#bd-image
+{
+    position: relative;
+    text-align: center;
+    color: brown;
+}
+.text
+{
+   position: absolute;
+   top:30vh;
+   bottom: 50%;
+   text-align: center;
+   left: 30%;
+   font-size: xx-large;
+}
+
+#text2
+{
+    position: absolute;
+   top:45%;
+   bottom: 50%;
+   text-align: center;
+   left: 20%;
+}
+#button
+{
+    border-radius: 6px;
+    
+}
+#button:hover {
+    
+    background-color: brown;
+}
+#div2
+{
+background-color: rgb(176, 78, 78);
+color: white;
+padding: 10px;
+text-align: center ;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 20px;
+}
+#div3
+{
+background-color: white;
+color: black;
+padding: 5px;
+text-align: center ;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+#p1
+{
+    background-color: rgb(176, 78, 78);
+    color: aliceblue;
+    padding: 8px;
+}
+#p3
+{
+    background-color: rgb(176, 78, 78);
+    color: aliceblue;
+    padding: 8px;
+    
+}
+#p2
+{
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+#p1,#p2,#p3
+{
+    float: left;
+    width: 30%;
+    margin-left: 30px;
+    margin-top: 20px;
+}
