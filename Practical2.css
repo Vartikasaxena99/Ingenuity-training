@@ -1,0 +1,75 @@
+#text1
+{
+    
+    text-align: center;
+    background-color:lightgrey;
+    height: 110px;
+}
+#title
+{
+    padding-top: 20px;
+}
+#te
+{
+    padding-bottom: 5px;
+}
+#image
+{
+    
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+#image-text
+{
+    text-align: center;
+}
+#div-3
+{
+    
+    background-color: lightgrey;
+}
+#head
+{
+    text-align: center;
+}
+
+#list
+{
+    
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 20px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    
+    
+}
+#list li
+{
+    padding-top: 15px;
+}
+#para1
+{
+    padding-top: 25px;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#para2
+{
+    padding-top: 10px;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#last-head
+{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
