@@ -13,8 +13,6 @@ h1{
 .container
 {
      max-width: 1200px; 
-    
-    
     margin: auto;
 }
 
@@ -22,7 +20,6 @@ header
 {
     background-color: grey;
     width: 1200px;
-    
     height: 10vh;
     text-align: center;
     display: flex; /* it makes all the contents align (flex box property ) */
@@ -56,7 +53,7 @@ header
   }
 article
 {
-    
+    border: 2px solid silver;
     height: 85vh;
     text-align: center;
     display: flex; /* it makes all the contents align */
@@ -86,8 +83,8 @@ main{
     width:50%;
     height: 500px;
     overflow: hidden;
-    background-color: brown;
-
+    background-color: goldenrod;
+    border: 2px solid silver;
     
 }
 main p{
@@ -114,21 +111,21 @@ aside >.box1{
     background-image: url("/images/images1.jpg");
     width: 100%;
     margin-bottom: 5px;
-   
+    border: 2px solid silver;
 }
 aside >.box2{
     height: 150px;
     background-image: url("/images/image12.jpg");
     width: 100%;
     margin-bottom: 5px;
-   
+    border: 2px solid silver;
 }
 aside >.box3{
     height: 150px;
     background-image: url("/images/image13.jpg");
     width: 100%;
     margin-bottom: 5px;
-   
+    border: 2px solid silver;
 }
 .box1 h1{
     color: black;
@@ -155,6 +152,7 @@ aside >.box3{
     justify-content: space-evenly;
     width:100%;
     margin-bottom: 20px;
+    
 }
 .imgBox1
 {
@@ -163,6 +161,7 @@ aside >.box3{
     background-color: grey;
     border-radius: 10px;
     overflow: hidden;
+    border: 2px solid silver;
 }
 .imgBox1  a {
     display: block;
@@ -184,6 +183,7 @@ footer
     margin-top: 20px;
     width: 100%;
     background-color: rgb(26, 26, 26);
+    border: 2px solid silver;
 }
 .section-1
 {
