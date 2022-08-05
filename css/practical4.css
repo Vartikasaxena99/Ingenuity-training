@@ -10,7 +10,14 @@ h1{
     font-size: 24px;
     text-transform: uppercase;
     text-align: center;
-    text-shadow: 2px 2px solid green;
+    font-family: 'Roboto', sans-serif;
+
+}
+main h1{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Square Peg', cursive;
+color: black;
 }
 /* we do not give height to container because it expends top to bottom according to the content */
 .container
@@ -239,6 +246,7 @@ footer
     text-decoration: none;
     text-transform:capitalize;
     color: gray;
+
 }
 .quicklinks
 {
@@ -257,6 +265,7 @@ footer
 {
     padding: 1px;
     margin-bottom: 5px;
+    
 }
 .quicklinks ul li a
 {
