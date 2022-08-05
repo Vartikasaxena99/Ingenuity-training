@@ -108,21 +108,21 @@ aside{
 }
 aside >.box1{
     height: 150px;
-    background-image: url("/images/images1.jpg");
+    background-image: url("/images1.jpg");
     width: 100%;
     margin-bottom: 5px;
     border: 2px solid silver;
 }
 aside >.box2{
     height: 150px;
-    background-image: url("/images/image12.jpg");
+    background-image: url("/image12.jpg");
     width: 100%;
     margin-bottom: 5px;
     border: 2px solid silver;
 }
 aside >.box3{
     height: 150px;
-    background-image: url("/images/image13.jpg");
+    background-image: url("/image13.jpg");
     width: 100%;
     margin-bottom: 5px;
     border: 2px solid silver;
