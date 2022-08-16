@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:rgb(95, 95, 146) ;">Task4</h1>
+    <script>
+        function myfunc(str)
+        {
+            var s=str;
+            if(s.substring(0,4)=="New!")
+            {
+                
+            }
+            else
+            {
+                s="New!"+str;
+                
+            }
+            return s;
+        }
+        document.write("1.  Original String is: vartikasaxena <br>");
+        document.write("This string don't have 'New!' so it will add 'New!' at the starting of string : ");
+        document.write(myfunc("vartikasaxena"));
+        document.write("<br><br>");
+        document.write("2.  Original String is: vat <br>");
+        document.write("This string  has 'New!' so it will return orginal String : ");
+        document.write(myfunc("New!vat"));
+        document.body.style.backgroundImage="linear-gradient(to right,violet,pink,silver,grey)";
+        document.body.style.color="green";
+        document.body.style.fontSize="30px";
+        document.body.style.textAlign="center";
+        document.body.style.fontStyle="bolder";
+        // document.body.style.textTransform="LowerCase";
+        document.body.style.textShadow="10px 10px 10px grey";
+        document.body.style.marginTop="20vh";
+        document.body.style.fontStyle="Italic"
+    </script>
+</body>
+</html>

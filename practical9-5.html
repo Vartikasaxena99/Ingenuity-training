@@ -1,0 +1,58 @@
+<!-- Write a JavaScript program to create a new string from a given string taking first 3 characters and the last 3 characters of a string and add them together.  -->
+<!-- The string length must be 3 or more. If not, return the original string is returned.  (Use Functional Approach) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:rgb(95, 95, 146) ;">Task5</h1>
+   <script>
+        function myfunction(str)
+        {
+            var res="";
+            var length=str.length;
+            if(length<3)
+            {
+                return str;
+            }
+            else{
+                var res1 = str.substring(0, 3);
+                var res2=str.substring(length-3, length);
+                res=res1+res2;
+                return res;
+            }
+        }
+        document.write("This is the orginal string : vartikasaxena <br>");
+        document.write("It size is greater than 3 so it will return a string which contains first 3 and last 3 character of orginal string");
+        document.write("<br> The result is : ");
+        document.write(myfunction("vartikasaxena"));
+        document.write("<br> <br> ");
+        document.write("This is the orginal string : var <br>");
+        document.write("It size is  3 so it will return a string which contains first 3 and last 3 character of orginal string ");
+        document.write("<br> The result is : ");
+        document.write(myfunction("var"));
+        document.write("<br> <br> ");
+        document.write("This is the orginal string : va <br>");
+        document.write("It size is smaller than 3 so it will return orginal string ");
+        document.write("<br> The result is : ");
+        document.write(myfunction("vartikasaxena"));
+        document.write("<br> <br> ");
+        
+
+        document.body.style.backgroundImage="linear-gradient(to right,violet,pink,silver,grey)";
+        document.body.style.color="green";
+        document.body.style.fontSize="30px";
+        document.body.style.textAlign="center";
+        document.body.style.fontStyle="bolder";
+        // document.body.style.textTransform="LowerCase";
+        document.body.style.textShadow="10px 10px 10px grey";
+        document.body.style.marginTop="18vh";
+        document.body.style.fontStyle="Italic"
+   </script> 
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:rgb(95, 95, 146) ; text-align: center;">Task1</h1>
+    <h2 style="color:rgb(29, 128, 108) ;text-align: center;">It is a sum function which return sum of all Arguments passed to a Function </h2>
+    <script>
+        function sum()
+        {
+            console.log(arguments);
+            var sum=0;
+            for(var i=0;i<arguments.length;i++)
+            {
+                sum+=arguments[i];
+            }
+            return sum;
+        }
+        
+        document.write("<br> sum of arguments is: "+sum(3,9,7));
+        document.write("<br> sum of arguments is: "+sum(0,0,0,0,0));
+        document.write("<br> sum of arguments is: "+sum(1,2,3,4));
+        document.write("<br> sum of arguments is: "+sum(1,2));
+        document.write("<br> sum of arguments is: "+sum(0,0,4,5,6,0));
+
+        document.body.style.backgroundImage="linear-gradient(to right,violet,pink,silver,grey)";
+        document.body.style.color="brown";
+        document.body.style.fontSize="30px";
+        document.body.style.textShadow="10px 10px 10px grey";
+        document.body.style.marginTop="15vh";
+        document.body.style.fontWeight="300px";
+        document.body.style.fontStyle="Italic";
+        document.body.style.textAlign="center";
+    </script>
+</body>
+</html>
