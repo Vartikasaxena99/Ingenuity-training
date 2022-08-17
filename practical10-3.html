@@ -1,0 +1,31 @@
+<!-- Write a Program to call a function in an interval of 3 sec for 5 times. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <script>
+        var count = 5;
+        Interval();
+        function Interval() {
+        setTimeout(function() {
+            document.write("<H1>Hello <br>");
+            count--;
+            if (0 < count) 
+            {
+            Interval();
+            };
+            }, 3000);
+        };  
+        
+    </script>
+</body>
+</html>

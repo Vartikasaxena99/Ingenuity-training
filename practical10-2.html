@@ -1,0 +1,34 @@
+<!-- Write a Program to create an array having cube root of every element of another array.
+    var numbers = [8,27,64,125,216];  -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 style="color:rgb(95, 95, 146) ;">Task2</h1>
+        <script>
+            const numbers = [8,27,64,125,216];
+            const newArr = numbers.map(myFunction)
+
+            function myFunction(num) {
+            return num * num *num;
+            }
+            document.write("<br><h3>This is Program to create an array having cube root of every element of another array.<br><br>");
+            document.write(newArr);
+            document.body.style.backgroundImage="linear-gradient(to right,violet,pink,silver,grey)";
+            document.body.style.color="aquamarine";
+            document.body.style.fontSize="30px";
+            document.body.style.textAlign="center";
+            document.body.style.fontStyle="bolder";
+            // document.body.style.textTransform="LowerCase";
+            document.body.style.textShadow="10px 10px 10px grey";
+            document.body.style.marginTop="20vh";
+            document.body.style.fontStyle="Italic"
+        </script>
+    </body>
+    </html>

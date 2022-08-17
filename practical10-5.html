@@ -1,0 +1,38 @@
+<!-- Write a Program to Filter out people whose age is less than 25 in descending order. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:rgb(95, 95, 146) ;">Task5</h1>
+    <script>
+        document.write("<h3>There are people whose age is less than 25 in descending order.<br><br>");
+        var people = [
+        { name: "Vartika", age: 15 },
+        { name: "Umang", age: 12 },
+        { name: "Ajay", age: 21 },
+        { name: "Arvind", age: 26 },
+        { name: "Mahesh", age: 28 },
+        { name: "Jay", age: 19 }
+        ];
+        
+        var peopleAge=people.filter((age1)=>age1.age<25)
+            .sort((n1,n2)=> n1.age-n2.age).reverse();   
+        document.write(JSON.stringify(peopleAge));
+        document.body.style.backgroundImage="linear-gradient(to right,violet,pink,silver,grey)";
+            document.body.style.color="aquamarine";
+            document.body.style.fontSize="30px";
+            document.body.style.textAlign="center";
+            document.body.style.fontStyle="bolder";
+            // document.body.style.textTransform="LowerCase";
+            document.body.style.textShadow="10px 10px 10px grey";
+            document.body.style.marginTop="22vh";
+            document.body.style.fontStyle="Italic"
+    </script>
+</body>
+</html>

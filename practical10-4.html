@@ -1,0 +1,49 @@
+<!-- Write a Program to iterate an Array of Objects using map function.
+var people = [
+  { name: "Ashish", age: 23 },
+  { name: "Ajay", age: 21 },
+  { name: "Arvind", age: 26 },
+  { name: "Mahesh", age: 28 },
+  { name: "Jay", age: 19 }
+]; -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:rgb(95, 95, 146) ;">Task4</h1>
+    <script>
+
+        var people = [
+        { name: "Ashish", age: 23 },
+        { name: "Ajay", age: 21 },
+        { name: "Arvind", age: 26 },
+        { name: "Mahesh", age: 28 },
+        { name: "Jay", age: 19 }
+        ];
+
+         var fullName=people.map((u)=>
+        {
+            return u.name+":"+u.age+" ";
+        });
+        
+        document.write("<br><h3>Program to iterate an Array of Objects using map function<br><br>");
+        document.write(fullName);
+            document.body.style.backgroundImage="linear-gradient(to right,violet,pink,silver,grey)";
+            document.body.style.color="aquamarine";
+            document.body.style.fontSize="30px";
+            document.body.style.textAlign="center";
+            document.body.style.fontStyle="bolder";
+            // document.body.style.textTransform="LowerCase";
+            document.body.style.textShadow="10px 10px 10px grey";
+            document.body.style.marginTop="22vh";
+            document.body.style.fontStyle="Italic"
+    </script>
+</body>
+</html>

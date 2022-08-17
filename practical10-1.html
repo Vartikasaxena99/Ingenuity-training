@@ -1,0 +1,59 @@
+<!-- Write a Program to use call() and apply() Method.  
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3
+        {
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:rgb(95, 95, 146) ;">Task1</h1>
+    <script>
+        document.write("<br> <h3> This is call() Function : ");
+        var Person={
+            fullName:function(city,country) 
+            {
+                return this.firstName+" "+this.lastName+" "+city+" "+country;
+            }
+        };
+        
+        var Person1={
+            firstName:"Umang",
+            lastName:"Baranwal",
+        };
+        document.write(Person.fullName.call(Person1,"Mumbai","India"));
+        document.write("<br> <h3>This is apply() Function : ");
+
+        var Person={
+            fullName:function(city,country) 
+            {
+                return this.firstName+" "+this.lastName+" "+city+" "+country;
+            }
+        };
+        var person2={
+            firstName:"Vartika",
+            lastName:"Saxena",
+        };
+        document.write(Person.fullName.apply(person2,["Delhi","India"]));
+
+        document.body.style.backgroundImage="linear-gradient(to right,violet,pink,silver,grey)";
+        document.body.style.color="green";
+        document.body.style.fontSize="30px";
+        document.body.style.textAlign="center";
+        document.body.style.fontStyle="bolder";
+        // document.body.style.textTransform="LowerCase";
+        document.body.style.textShadow="10px 10px 10px grey";
+        document.body.style.marginTop="16vh";
+        document.body.style.fontStyle="Italic"
+    </script>
+</body>
+</html>
