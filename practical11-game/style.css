@@ -10,8 +10,9 @@ h1{
     text-align: center;
     font-size: 82px;
     font-weight: bolder;
-    color: orangered;
+    color: rgb(54, 167, 54);
     margin-top: 0%;
+    
 }
 
 #mole{
@@ -73,10 +74,15 @@ h1{
     left: 65%;
 }
 .points{
-    font-size: x-large;
+    font-size:xx-large;
     font-weight: bolder;
     padding-left: 20px;
+    text-shadow: 10px 10px 10px solid grey;
+    /* margin-left: 300px; */
+    color:rgb(29, 49, 57);
     visibility: hidden;
+    text-align: center;
+    
 }
 .mole{
     position: absolute;
