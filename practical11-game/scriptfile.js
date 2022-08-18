@@ -9,7 +9,6 @@ function start(){
     for(var i=0;i<2;i++){
         document.getElementsByClassName("points")[i].style.visibility="visible";
     }
-    // document.getElementsByClassName("points").style.visibility="visible";
     for(var i=0;i<6;i++){
         document.getElementsByClassName("dirt")[i].style.visibility="visible";
     }
