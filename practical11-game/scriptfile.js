@@ -2,7 +2,8 @@
 var currentPoint=0;
 var hj=document.querySelector("h2");
 var hy=document.querySelector("p");
-
+var all=document.getElementsByClassName("dirt");
+var allMol=document.getElementsByClassName("mole");
 
 function start(){
     hj.style.visibility="hidden";
@@ -16,7 +17,7 @@ function start(){
     for(var i=0;i<6;i++){
         document.getElementsByClassName("dirt")[i].style.visibility="visible";
     }
-    setInterval(() => {
+    let x= setInterval(() => {
         var random=Math.floor(Math.random()*6)+1;
         document.getElementById("mole"+random).style.visibility="visible";
         setTimeout(() => {
@@ -38,6 +39,7 @@ const countDown = setInterval(() => {
   if (timeSecond == 60 || timeSecond >60 ) {
     endCount();
     clearInterval(countDown);
+    clearInterval(x)
   }
 }, 1000);
 
@@ -50,7 +52,11 @@ function displayTime(second) {
 }
 
 function endCount() {
-
+   for(var i=0;i<6;i++)
+   {
+    all[i].style.visibility="hidden";
+    allMol[i].style.visibility="hidden";
+   }
   timeH.innerHTML = "Time out";
    hj.style.visibility="hidden";
   {
@@ -63,9 +69,6 @@ function endCount() {
         hy.innerText="you have lost the match";
     }
   }
- 
-    
-
     
 }
 
