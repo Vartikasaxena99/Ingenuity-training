@@ -28,15 +28,15 @@ function start(){
     }, 1000);
 
 
-    let timeSecond = 0;
+    let timeSecond = 60;
 const timeH = document.querySelector("h4");
 
 displayTime(timeSecond);
 
 const countDown = setInterval(() => {
-  timeSecond++;
+  timeSecond--;
   displayTime(timeSecond);
-  if (timeSecond == 60 || timeSecond >60 ) {
+  if (timeSecond == 0 || timeSecond <1 ) {
     endCount();
     clearInterval(countDown);
     clearInterval(x)
