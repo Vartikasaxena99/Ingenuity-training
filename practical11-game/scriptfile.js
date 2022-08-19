@@ -1,7 +1,11 @@
 
 var currentPoint=0;
+var hj=document.querySelector("h2");
+var hy=document.querySelector("p");
+
 
 function start(){
+    hj.style.visibility="hidden";
     document.getElementById("mole").style.visibility='hidden';
     document.getElementById("mud").style.visibility="hidden";
     document.getElementById("start").style.visibility='hidden';
@@ -21,8 +25,65 @@ function start(){
             }
         }, 900);
     }, 1000);
+
+
+    let timeSecond = 0;
+const timeH = document.querySelector("h4");
+
+displayTime(timeSecond);
+
+const countDown = setInterval(() => {
+  timeSecond++;
+  displayTime(timeSecond);
+  if (timeSecond == 60 || timeSecond >60 ) {
+    endCount();
+    clearInterval(countDown);
+  }
+}, 1000);
+
+function displayTime(second) {
+  const min = Math.floor(second / 60);
+  const sec = Math.floor(second % 60);
+  timeH.innerHTML = `
+  ${min < 10 ? "0" : ""}${min}:${sec < 10 ? "0" : ""}${sec}
+  `;
+}
+
+function endCount() {
+
+  timeH.innerHTML = "Time out";
+   hj.style.visibility="hidden";
+  {
+    if(currentPoint>=10)
+    {
+        hy.innerText="you have won the match";
+    }
+    else
+    {
+        hy.innerText="you have lost the match";
+    }
+  }
+ 
+    
+
+    
+}
+
 }
 
 function clicked(){
+    
     document.getElementById("currentPoint").innerHTML=currentPoint++;
 }
+
+const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    audio.play();
+  });
+});
+
+
+

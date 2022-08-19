@@ -5,14 +5,32 @@ body{
     background-position: inherit;
 }
 
-h1{
+h2{
     font-family: cursive;
     text-align: center;
     font-size: 82px;
     font-weight: bolder;
-    color: rgb(54, 167, 54);
-    margin-top: 0%;
+    color: rgb(27, 236, 27);
+    margin-top: 0%; 
     
+}
+h4{
+    font-family: cursive;
+    text-align: center;
+    font-size: 82px;
+    font-weight: bolder;
+    color: rgb(46, 74, 173);
+    margin-top: -10%;
+    
+
+}#res{
+    margin-bottom: 400px;
+    font-family: cursive;
+    text-align: center;
+    font-size: 82px;
+    font-weight: bolder;
+    color: rgb(219, 42, 59); 
+    margin-top: -2%;
 }
 
 #mole{
@@ -73,16 +91,27 @@ h1{
     top: 90%;
     left: 65%;
 }
-.points{
-    font-size:xx-large;
+#points{
+    /* font-size:xx-large;
     font-weight: bolder;
-    padding-left: 20px;
-    text-shadow: 10px 10px 10px solid grey;
-    /* margin-left: 300px; */
-    color:rgb(29, 49, 57);
-    visibility: hidden;
-    text-align: center;
     
+    text-shadow: 10px 10px 10px solid grey;
+    /*  */
+    /* color:rgb(29, 49, 57);
+    
+    text-align: center;
+     */ 
+     /* padding-left: 20px; */
+    
+    font-family: cursive;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    color: rgb(156, 34, 73);
+    /* margin-top: 0px; */
+    /* padding-right: -50%; */
+    visibility: hidden;
+    margin-top: -3%;
 }
 .mole{
     position: absolute;
