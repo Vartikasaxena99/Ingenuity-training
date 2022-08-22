@@ -5,7 +5,7 @@
 // // Selectors
 var todoInput = document.querySelector(".todo-input");
 var btn = document.querySelector("button");
-var todolist = document.querySelector(".todo-list");
+var todoList = document.querySelector(".todo-list");
 var ll=0;
 ll=Number(window.localStorage.getItem('numberItems'));
 console.log(ll);
@@ -45,7 +45,7 @@ for(var i=0;i<50;i++)
     deletebtn.innerHTML = '<i class="fa fa-trash"></i>';
     newDiv.appendChild(deletebtn);
     
-    todolist.appendChild(newDiv);
+    todoList.appendChild(newDiv);
     
   } 
 }
@@ -80,7 +80,7 @@ btn.onclick=function create(e) {
        
        var oo="tt"+ Number(ll);
 
-        window.localStorage.setItem(oo,toInput.value);
+        window.localStorage.setItem(oo,todoInput.value);
         console.log(oo);
         ll=Number(ll)+1;
         //console.log(ll);
@@ -104,13 +104,13 @@ btn.onclick=function create(e) {
         deletebtn.innerHTML = '<i class="fa fa-trash"></i>';
         newDiv.appendChild(deletebtn);
         
-        todolist.appendChild(newDiv);
+        todoList.appendChild(newDiv);
         todoInput.value = "";
       } ;
     
     
     
-    function deletecheck(e) {
+    todoList.onclick=function deletecheck(e) {
       var item = e.target;
     
       if (item.classList[0] === "delete-btn") {
