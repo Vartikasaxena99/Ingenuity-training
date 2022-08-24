@@ -1,4 +1,14 @@
-
+window.onload=function()
+{
+  setInterval(() => {
+    stoploader();
+  }, 3000);
+}
+function stoploader()
+{
+  document.querySelector(".container").style.display="none";
+  document.getElementById("todocon").style.display="block";
+}
 
 
 // // Selectors

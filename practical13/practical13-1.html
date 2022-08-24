@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="todo.css" />
+
+
+    <style>
+      #todocon
+      {
+        display: none;
+      }
+      .container
+      {
+          height: 100vh;
+          width: 100%;
+          /* background-image: linear-gradient(to right top blue,deeppink);  */
+          background-color: blueviolet; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+      }
+      .box
+      {
+          width:150px;
+          height:150px;
+          border:10px solid rgba(204, 197,197);
+          border-top: 10px solid white;
+          border-radius: 50%;
+          /* animation:  */
+          /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+          animation: loader 2s linear  infinite; 
+          /* animation: popup 2s linear infinite; */
+      }
+       @keyframes loader { 
+          0%
+          {
+              transform: rotate(0deg);
+          }
+          100%
+          {
+              transform: rotate(360deg);
+          }
+          
+      }
+      
+      /* @keyframes popup { 
+          0%
+          {
+              opacity: 1;
+          }
+          50%
+          {
+              opacity: 0;
+          }
+          100%
+          {
+              opacity: 1;
+          }
+          
+      }
+      */
+      p
+      {
+          font-family: arial;
+          font-size: 30px;
+          /* font-weight: bold; */
+          color:white;
+          text-transform: uppercase;
+          
+      }
+  </style>
+</head>
+  <body>
+  <div class="container">
+      <div class="box">
+
+      </div>
+      <p>Loading</p>
+  </div>
+  
+    <div id="todocon">
+    <header>To-do List </header>
+    <form>
+      <input type="text" class="todo-input" placeholder="Enter your list "/>
+      <button>
+        <i class="fa fa-plus-square" aria-hidden="true"></i>
+      </button>
+    </form>
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
