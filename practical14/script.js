@@ -20,9 +20,9 @@ function getApiData(url)
         }; 
     });
  } 
-//  getApiData(API_URL) .then((val) => { console.log(JSON.parse(val)); displayData(JSON.parse(val)); }) 
+ getApiData(API_URL) .then((val) => { console.log(JSON.parse(val)); displayData(JSON.parse(val)); }) 
 
-getApiData(API_URL).then((val)=>{return JSON.parse(val)}).then((re)=>displayData(re.Countries[0])).catch((err)=>console.log)
+// getApiData(API_URL).then((val)=>{return JSON.parse(val)}).then((re)=>displayData(re.Countries[0])).catch((err)=>console.log)
 
 
 .catch((err) => 
