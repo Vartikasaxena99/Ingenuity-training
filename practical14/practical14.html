@@ -1,38 +1,80 @@
-const API_URL = "https://jsonplaceholder.typicode.com/users";
-
-function getApiData(url) {
-  console.log("We are good to go to call API using Fetch ");
-
-  fetch(url)
-    .then((val) => {
-      return val.json();
-    })
-    .then((res) => displayData(res))
-
-    .catch((err) => console.log(err));
-}
-
-getApiData(API_URL);
-
-function displayData(serverData) {
-  for (var user of serverData) {
-    let newtr = document.createElement("tr");
-
-    let newtd1 = document.createElement("td");
-    let newtd2 = document.createElement("td");
-    let newtd3 = document.createElement("td");
-    let newtd4 = document.createElement("td");
-
-    newtd1.innerText = "" + user.id;
-    newtd2.innerText = "" + user.name;
-    newtd3.innerText = "" + user.email;
-    newtd4.innerText = "" + user.phone;
-
-    newtr.appendChild(newtd1);
-    newtr.appendChild(newtd2);
-    newtr.appendChild(newtd3);
-    newtr.appendChild(newtd4);
-
-    document.getElementById("myTable").appendChild(newtr);
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>   
+     <meta charset="UTF-8">    
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+      <style>        
+      body{            
+        background-color: skyblue;        
+        }        
+        header
+        {            
+          background-color: transparent;            
+          color: greenyellow;            
+          text-align: center;            
+          border: 2px solid black;
+          background-color: antiquewhite;
+          border-radius: 15px;            
+          justify-content: center;            
+          align-items: center;            
+          height: 15vh;    
+          font-size: 30px;
+          text-transform: uppercase;   
+        }        
+        header h1
+        {            
+          margin-top: 25px;
+          padding-bottom: 80px;        
+        }        
+        main{            
+          background-color: transparent;            
+                      
+              /* width: 70%;              height: 50vh;  */            
+          margin-top:10px ;            
+          margin-left: 500px;        
+          /* margin-right: 400px;   */
+          margin-bottom: 20px;        
+          padding-top: 20px; 
+          
+          height: 60vh;                  
+        }       
+        main h2{            
+                  
+          color: rgb(163, 27, 208);            
+          text-align: center;
+          font-weight: bolder;
+          text-shadow: 10px 10px 10px solid gray; 
+           font-weight: 900;   
+          text-transform: uppercase;
+           font-size: 50px;
+        }        
+        main h3{            
+          color: rgb(51, 54, 57);  
+          text-shadow: 10px 10px 10px solid gray;          
+          font-weight: 2000;
+          font-weight: bolder;
+          text-shadow: 10px 10px 10px solid gray; 
+           font-weight: 900;   
+          text-transform: uppercase;
+           font-size:30px;        
+        }    
+        </style>    
+        <title>api</title>
+      </head>
+      <body style="background-image: url(img1.jpg); background-repeat: no-repeat;background-size: cover;">    
+          <header>        
+            <h1>Fetching Data using Covid API</h1>    
+          </header>   
+          <main style="margin-right:400px ;">        
+          <h2>Today Covid Cases</h2>        
+          <h3>Country Name: <span id="y1" style="color:rgb(37, 163, 140)  ; font-size: 30px; margin-left: 10px;"></span> </h3>        
+          <h3>date: <span id="y2" style="color:rgb(37, 163, 140)  ; margin-left: 30px;font-size: 20px;"></span > </h3>        
+          <h3>Total cases: <span id="y3" style="color:rgb(37, 163, 140) ; margin-left: 30px;font-size: 20px;"></span> </h3>        
+          <h3>Total Deaths: <span id="y4" style="color:rgb(37, 163, 140)  ; margin-left: 30px;font-size: 20px;"></span> </h3>        
+          <h3>new Cases: <span id="y5" style="color:rgb(37, 163, 140)  ; margin-left: 30px;font-size: 20px;"></span> </h3>        
+          <h3>New Deaths: <span id="y6" style="color:rgb(37, 163, 140)  ; margin-left: 30px;font-size: 20px;"></span> </h3>    
+          </main>  
+          <script src="script.js"></script>    
+      </body>
+</html>
