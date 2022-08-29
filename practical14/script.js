@@ -1,5 +1,5 @@
 const API_URL = "https://api.covid19api.com/summary"; 
-function getApiData(url) 
+function apiget(url) 
 { 
     console.log("We are good to go to call API using XHR "); 
     return new Promise((resolve, reject) => 
@@ -20,23 +20,40 @@ function getApiData(url)
         }; 
     });
  } 
- getApiData(API_URL) .then((val) => { console.log(JSON.parse(val)); displayData(JSON.parse(val)); }) 
- 
+apiget(API_URL).then((val)=>{return JSON.parse(val)}).then((re)=>{
+       rr(re.Countries);
+       }).catch((err)=>console.log(err));
+function rr(RE){
+    var select= document.getElementById("sel");
+    for(var i=0;i<195;i++){
+        var option=document.createElement("option");
+        option.innerText=RE[i].Country;
+        option.value =RE[i].Country;
+        select.appendChild(option);
+        console.log(select);
+    }
+    select.onclick=function(){
+        var option=select.options[select.selectedIndex];
+        var a=option.value;
+        console.log(a);
+        console.log(select.options.length);
+        for(var i=0;i<select.options.length;i++){
+            if(a==RE[i].Country){
+                var h1=document.getElementById("1");
+var h2=document.getElementById("2");
+var h3=document.getElementById("3");
+var h4=document.getElementById("4");
+var h5=document.getElementById("5");
+var h6=document.getElementById("6");
+h1.innerText=" "+RE[i].Country;
+h2.innerText=" "+RE[i].Date;
+h3.innerText=" "+RE[i].TotalConfirmed;
+h4.innerText=" "+RE[i].TotalDeaths;
+h5.innerText=" "+RE[i].NewConfirmed;
+h6.innerText=" "+RE[i].NewDeaths;
+}}}
+}  
 
-// getApiData(API_URL).then((val)=>{return JSON.parse(val)}).then((re)=>displayData(re.Countries[0])).catch((err)=>console.log)
 
 
-.catch((err) => 
-console.log("Error" + err)); 
-function displayData(serverData) 
-{ 
-    for(var i=0;i<1;i++) var i=29; 
-    console.log(serverData.Countries[1].Country); 
-    document.getElementById("y1").innerHTML=serverData.Countries[i].Country; 
-    document.getElementById("y2").innerHTML=serverData.Countries[i].Date; 
-    document.getElementById("y3").innerHTML=serverData.Countries[i].TotalConfirmed; 
-    document.getElementById("y4").innerHTML=serverData.Countries[i].TotalDeaths; 
-    document.getElementById("y5").innerHTML=serverData.Countries[i].NewConfirmed; 
-    document.getElementById("y6").innerHTML=serverData.Countries[i].NewDeaths; 
-    // document.getElementById("y1").innerHTML=serverData.Countries[i].Country; 
-}
+
