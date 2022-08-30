@@ -13,7 +13,7 @@ var mushObstacleImage, turtleObstacleImage, obstaclesGroup;
 var gameState = "PLAY";
 
 var restartImg;
-
+var birdImage;
 function preload() {
   bgImage = loadImage("images/bgnew.jpg");
   mario_running = loadAnimation(
@@ -35,11 +35,17 @@ function preload() {
     "images/con4.png",
     "images/con5.png"
   );
-
+  birdImage = loadAnimation(
+    "images/bird.png",
+    "images/bird.png",
+    "images/bird.png",
+    "images/bird.png",
+    "images/bird.png"
+  );
   // Add Sounds
   coinSound = loadSound("sounds/coinSound.mp3");
   jumpSound = loadSound("sounds/jump.mp3");
-   bgSound=  loadSound("sounds/sound.mp3");
+  bgSound=  loadSound("sounds/sound.mp3");
   mushObstacleImage = loadAnimation(
     "images/mush1.png",
     "images/mush2.png",
