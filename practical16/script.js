@@ -39,7 +39,7 @@ function preload() {
   // Add Sounds
   coinSound = loadSound("sounds/coinSound.mp3");
   jumpSound = loadSound("sounds/jump.mp3");
-
+   bgSound=  loadSound("sounds/sound.mp3");
   mushObstacleImage = loadAnimation(
     "images/mush1.png",
     "images/mush2.png",
@@ -63,7 +63,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1000, 600);
+  createCanvas(1200, 600);
   bg = createSprite(600, 300);
   bg.addImage(bgImage);
   bg.scale = 0.5;
@@ -82,7 +82,7 @@ function setup() {
 
   mario.addAnimation("collided", mario_collided);
 
-  restart = createSprite(500, 300);
+  restart = createSprite(600, 300);
   restart.addImage(restartImg);
   restart.visible = false;
 }
@@ -172,9 +172,9 @@ function draw() {
   }
 
   // Score Card
-  textSize(20);
-  fill("brown");
-  text("Coins Collected: " + coinScore, 500, 50);
+  textSize(40);
+  fill("green");
+  text("Your Score: " + coinScore, 500, 50);
 }
 
 function generateBricks() {
