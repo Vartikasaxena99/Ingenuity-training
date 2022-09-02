@@ -8,7 +8,8 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
     padding: 10px;
-    background: linear-gradient(#e66465, #9198e5);
+    background: linear-gradient(gray,#e66465, #9198e5);
+    background-image: url("INDEX.jpg");
   }
   caption {
     caption-side: bottom;
@@ -27,6 +28,7 @@
     margin: 20px auto;
     border-radius: 5px;
     background: #fff;
+    background-color: rgb(255, 224, 229);
   }
 
   thead tr:first-child {
@@ -111,4 +113,20 @@
   }
   a:hover {
     color: blue;
+  }
+  #t:hover
+  {
+    transform: translate(-10px,10px);
+    background-image: linear-gradient(to left,gray,rgb(175, 175, 237));
+  }
+  .deliver h4
+  {
+    
+    color : rgb(33, 147, 164);
+    text-transform: uppercase;
+  }
+  table:hover
+  {
+    /* transform:scale(1.1); */
+    transform: translateY(50px);
   }
