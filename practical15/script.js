@@ -1,50 +1,10 @@
+
 // selector
 var canvas = document.getElementById("canvas");
-// var ctx = canvas.getContext("2d");
-var ctx2=canvas.getContext("2d");
+var ctx = canvas.getContext("2d");
+
 const image = document.getElementById("source");
-// ctx2.beginPath();
-//  ctx2.rect(300,50,150,100);
-//  ctx2.fillStyle="blue";
-//  ctx2.fill();
 
-
-var circle={
-    x:200,
-    y:200,
-    size:30,
-    dx:5,
-    dy:5,
-}
-//Draw the circle
-
-function drawCircle()
-{
-    ctx2.beginPath();
-    ctx2.arc(circle.x,circle.y,circle.size,0,Math.PI*2);
-    ctx2.fillStyle="purple";
-    ctx2.fill();
-}
-drawCircle();
-function update2()
-{
-    ctx2.clearRect(0,0,canvas.width,canvas.height);
-    drawCircle();
-    circle.x+=-circle.dx;
-    circle.y+=circle.dy;
-    //detect ball
-    if(circle.x+circle.size > canvas.width ||circle.x-circle.size <0 )
-    {
-        circle.dx*=-1;
-    }
-    if(circle.y+circle.size > canvas.height ||circle.y-circle.size <0 )
-    {
-        circle.dy*=-1;
-    }
-    requestAnimationFrame(update2);
-    console.log(123);
-}
-update2();
 const player = {
   w: 50,
   h: 70,
