@@ -5,6 +5,18 @@ var ctx = canvas.getContext("2d");
 
 const image = document.getElementById("source");
 
+
+
+
+
+
+
+
+
+
+
+
+
 const player = {
   w: 50,
   h: 70,
@@ -78,6 +90,21 @@ function moveLeft() {
   player.dx = -player.speed;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function keyDown(e) {
   console.log(e.key);
   if (e.key === "ArrowRight" || e.key === "Right") {
@@ -108,6 +135,79 @@ function keyUp(e) {
 }
 
 update();
-
 document.addEventListener("keydown", keyDown);
 document.addEventListener("keyup", keyUp);
+
+
+
+
+
+const ctx1 = canvas.getContext("2d");
+
+var circle = {
+  x: 200,
+  y: 200,
+  size: 30,
+  dx: 5,
+  dy: 5,
+};
+
+// Draw Circle
+function drawCircle() {
+  ctx1.beginPath();
+  ctx1.arc(circle.x, circle.y, circle.size, 0, Math.PI * 2);
+  ctx1.fillStyle = "purple";
+  ctx1.fill();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function update1() {
+  // ctx1.clearRect(0, 0, canvas.width, canvas.height);
+  drawCircle();
+  circle.x += circle.dx;
+  circle.y += circle.dy;
+
+  // Detect Wall
+  if (circle.x + circle.size > canvas.width || circle.x - circle.size < 0)
+    circle.dx *= -1;
+
+  if (circle.y + circle.size > canvas.height || circle.y - circle.size < 0)
+    circle.dy *= -1;
+
+  requestAnimationFrame(update1);
+  console.log(123);
+}
+update1();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var canvas = document.getElementById("canvas");
